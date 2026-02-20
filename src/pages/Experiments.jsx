@@ -17,7 +17,7 @@ const experiments = [
     icon: Palette,
     color: 'from-blush-100 via-rose-50 to-cream-100',
     emoji: '🎨',
-    link: 'https://www.instagram.com/reel/DJHcD5zPX1G/',
+    link: 'https://www.instagram.com/reel/DJHcD5zPX1G/?utm_source=ig_web_button_native_share&igsh=MzRlODBiNWFlZA%3D%3D',
     image: '/experiment1.jpg',
   },
   {
@@ -28,7 +28,7 @@ const experiments = [
     icon: Shapes,
     color: 'from-cream-200 via-sand-100 to-warm-50',
     emoji: '✦',
-    link: 'https://www.instagram.com/reel/DJZYJLBtaY3/',
+    link: 'https://www.instagram.com/reel/DJZYJLBtaY3/?utm_source=ig_web_button_native_share&igsh=MzRlODBiNWFlZA%3D%3D',
     image: '/experiment2.jpg',
   },
   {
