@@ -381,7 +381,7 @@ export default function Experiments() {
                   What you see here is just a small window. I share more blogs, videos, and design thoughts on my Instagram page. Do check it out.
                 </p>
                 <a
-                  href="https://www.instagram.com/shruniqeness"
+                  href="https://www.instagram.com/shruniqueness"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-hover="true"
