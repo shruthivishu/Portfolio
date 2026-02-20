@@ -17,7 +17,7 @@ const experiments = [
     icon: Palette,
     color: 'from-blush-100 via-rose-50 to-cream-100',
     emoji: '🎨',
-    link: 'https://www.instagram.com/reel/DJHcD5zPX1G/?igsh=MXJ0dWw4ODZnOHJwbw==',
+    link: 'https://www.instagram.com/reel/DJHcD5zPX1G/',
     image: '/experiment1.jpg',
   },
   {
@@ -39,7 +39,7 @@ const experiments = [
     icon: Pen,
     color: 'from-warm-100 via-cream-100 to-sand-100',
     emoji: '🔤',
-    link: 'https://www.instagram.com/p/DJg_JVLN4Lb/?igsh=NGNpaDl1am40dW11',
+    link: 'https://www.instagram.com/p/DJg_JVLN4Lb/',
     image: '/experiment3.jpg',
   },
   {
@@ -50,7 +50,7 @@ const experiments = [
     icon: Zap,
     color: 'from-rose-50 via-blush-50 to-cream-100',
     emoji: '⚡',
-    link: 'https://www.instagram.com/reel/DLPMOCbvhdc/?igsh=MWk4NnBlZ2Rjd3Bqcg==',
+    link: 'https://www.instagram.com/reel/DLPMOCbvhdc/',
     image: '/experiment4.jpg',
   },
   {
@@ -61,7 +61,7 @@ const experiments = [
     icon: Wand2,
     color: 'from-sand-200 via-cream-200 to-warm-100',
     emoji: '🪄',
-    link: 'https://www.instagram.com/reel/DL7xi9XvoFD/?igsh=eGZmMjk4bHZ6cjZw',
+    link: 'https://www.instagram.com/reel/DL7xi9XvoFD/',
     image: '/experiment5.png',
   },
   {
@@ -72,7 +72,7 @@ const experiments = [
     icon: Dices,
     color: 'from-blush-100 via-cream-200 to-rose-50',
     emoji: '🎲',
-    link: 'https://www.instagram.com/reel/DPnpmBXjdHx/?igsh=MWczMDBybjUycjk3Zw==',
+    link: 'https://www.instagram.com/reel/DPnpmBXjdHx/',
     image: '/experiment6.jpg',
   },
 ]
