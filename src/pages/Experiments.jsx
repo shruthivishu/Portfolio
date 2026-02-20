@@ -61,7 +61,7 @@ const experiments = [
     icon: Wand2,
     color: 'from-sand-200 via-cream-200 to-warm-100',
     emoji: '🪄',
-    link: 'https://www.instagram.com/reel/DL7xi9XvoFD/',
+    link: 'https://www.instagram.com/p/DL7xi9XvoFD/',
     image: '/experiment5.png',
   },
   {
