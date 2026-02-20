@@ -28,7 +28,7 @@ const experiments = [
     icon: Shapes,
     color: 'from-cream-200 via-sand-100 to-warm-50',
     emoji: '✦',
-    link: 'https://www.instagram.com/reel/DJZYJLBtaY3/?igsh=aHV0NXJqMHhyaHln',
+    link: 'https://www.instagram.com/reel/DJZYJLBtaY3/',
     image: '/experiment2.jpg',
   },
   {
