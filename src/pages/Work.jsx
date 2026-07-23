@@ -31,83 +31,137 @@ import FloatingShapes from '@/components/FloatingShapes'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
-const categories = ['All', 'Favorites', 'Explorations']
+const categories = [
+  'All',
+  'Favorites',
+  'Design',
+  'Accessibility',
+  'Health',
+  'AI & XR',
+  'Explorations',
+]
 
 const projects = [
   {
     id: 1,
     title: 'Worklyt',
     subtitle: 'Reimagining how people build early connections within unfamiliar workplace systems.',
-    category: 'Product',
     tags: ['UX Research', 'UI Design', 'Design Thinking'],
     color: 'from-blush-100 to-cream-200',
-    // year: '2025',
     link: 'https://www.behance.net/gallery/200049099/Worklyt-Workforce-management-app',
     image: '/worklyt.png',
+    filters: ['Favorites', 'Design'],
   },
   {
     id: 2,
     title: 'CarEazy',
     subtitle: 'Wireframing the experience of a car subscription app for a real client, focusing on usability, flow, and interaction clarity.',
-    category: 'Research',
     tags: ['Wireframing', 'UI Design', 'User Flows'],
     color: 'from-cream-200 to-sand-200',
-    // year: '2025',
     image: '/careazy2.jpg',
+    link: 'https://www.behance.net/gallery/203148721/CarEazy-A-car-subscription-mobile-app',
+    filters: ['Favorites', 'Design'],
   },
   {
     id: 3,
     title: 'InSpace Revamp',
     subtitle: 'Website redesign concept for InSpace Technologies focused on clarity and modern visual language',
-    category: 'Visual',
     tags: ['Web Design', 'UI Revamp', 'Visual Design'],
     color: 'from-rose-50 to-blush-100',
-    // year: '2024',
-    image: 'inspace-laptop.jpg',
+    image: '/inspace-laptop.jpg',
+    link: 'https://www.behance.net/gallery/211816645/Inspace-Company-Website-Revamp',
+    filters: ['Design', 'Explorations'],
   },
   {
     id: 4,
     title: 'Eduthalamus',
     subtitle: 'A landing page concept for a school automation platform designed around clarity, usability, and everyday academic workflows.',
-    category: 'Product',
     tags: ['Product Design', 'UI UX Design', 'Landing Page'],
     color: 'from-warm-100 to-cream-200',
-    // year: '2024',
     link: 'https://eduthalamus.vercel.app/',
     image: '/eduthalamus.png',
+    filters: ['Design', 'Explorations'],
   },
-  // Project Five removed
-    // Project Six removed
-    // {
-    //   id: 6,
-    //   title: 'Project Six',
-    //   subtitle: 'Designing with communities, not for them',
-    //   category: 'Research',
-    //   tags: ['Participatory Design', 'Interviews', 'Synthesis'],
-    //   color: 'from-sand-200 to-warm-100',
-  //   // year: '2023',
-    // },
+  {
+    id: 5,
+    title: 'GameAble',
+    subtitle: 'A desktop app that lets you control PC games with body poses detected in real time via webcam—no keyboard or mouse required.',
+    tags: ['Pose Recognition', 'CNN', 'Gemini AI'],
+    color: 'from-cream-200 to-blush-100',
+    link: 'https://github.com/ZENODIUM/GameAble-AI',
+    image: '/gameable_ai.png',
+    filters: ['Accessibility', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 6,
+    title: 'Clarify',
+    subtitle: 'Spatial product support that turns dead manuals into live XR agents—photo-to-3D twins, voice AI, and parts that glow in WebXR.',
+    tags: ['WebXR', 'Voice AI', 'Spatial Design'],
+    color: 'from-sand-100 to-cream-200',
+    link: 'https://devpost.com/software/clarify-spatial-product-support',
+    image: '/clarify.png',
+    filters: ['Accessibility', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 7,
+    title: 'AR Aid Trainer',
+    subtitle: 'An AR first-aid trainer that teaches life-saving procedures through interactive 3D simulations and AI-powered guidance.',
+    tags: ['AR', '3D Interaction', 'EdTech'],
+    color: 'from-rose-50 to-warm-100',
+    link: 'https://github.com/ZENODIUM/AR-Aid-Trainer',
+    image: '/AR_Aid_Trainer.png',
+    filters: ['Accessibility', 'Health', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 8,
+    title: 'PregPose Pal',
+    subtitle: 'Realtime posture protection for moms-to-be—personalized sensor data, custom ML models, and live feedback on the go.',
+    tags: ['ML', 'Sensors', 'Health Tech'],
+    color: 'from-blush-100 to-sand-200',
+    link: 'https://devpost.com/software/pregpose-pal',
+    image: '/pregpose.png',
+    filters: ['Accessibility', 'Health', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 9,
+    title: 'GlucoSync',
+    subtitle: 'A metabolic nutrition MVP that helps users make better food decisions with AI meal understanding and glucose-aware guidance.',
+    tags: ['Mobile UX', 'AI Coaching', 'Health'],
+    color: 'from-warm-100 to-blush-100',
+    link: 'https://github.com/ZENODIUM/Glucosync',
+    image: '/glucosync.png',
+    filters: ['Health', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 10,
+    title: 'Biomimic Genie',
+    subtitle: 'Upload animal images to generate 3D biomimetic models and explore nature-inspired applications for sustainable design.',
+    tags: ['3D Generation', 'Biomimicry', 'UI Design'],
+    color: 'from-cream-200 to-rose-50',
+    link: 'https://devpost.com/software/biomimic-genie',
+    image: '/biomimic_genie.png',
+    filters: ['Design', 'AI & XR', 'Explorations'],
+  },
+  {
+    id: 11,
+    title: 'Inqube AI',
+    subtitle: 'An AI competitor analysis tool that gathers web, product, and YouTube insights to deliver SWOT, sentiment, and startup recommendations.',
+    tags: ['Competitor Analysis', 'AI Insights', 'Data Viz'],
+    color: 'from-sand-200 to-cream-200',
+    link: 'https://github.com/ZENODIUM/IncubeAI',
+    image: '/inqube.png',
+    filters: ['AI & XR', 'Explorations'],
+  },
 ]
 
 export default function Work() {
   const [activeFilter, setActiveFilter] = useState('All')
   const [hoveredProject, setHoveredProject] = useState(null)
 
-  // Filtering logic for new tabs
-  let filteredProjects;
-  if (activeFilter === 'All') {
-    filteredProjects = projects;
-  } else if (activeFilter === 'Favorites') {
-    filteredProjects = projects.filter(
-      (p) => ['Worklyt', 'CarEazy'].includes(p.title)
-    );
-  } else if (activeFilter === 'Explorations') {
-    filteredProjects = projects.filter(
-      (p) => ['InSpace Revamp', 'Eduthalamus'].includes(p.title)
-    );
-  } else {
-    filteredProjects = projects;
-  }
+  const filteredProjects =
+    activeFilter === 'All'
+      ? projects
+      : projects.filter((p) => p.filters?.includes(activeFilter))
 
   return (
     <PageTransition>
